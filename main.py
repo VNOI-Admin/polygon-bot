@@ -23,10 +23,10 @@ async def on_ready():
     await bot.load_extension("cogs.BotControlCommand")
 
 
-@bot.event
-async def on_command_error(ctx, error):
-    print(error)
-    await ctx.send("Error: " + str(error))
+# @bot.event
+# async def on_command_error(ctx, error):
+#     print(error)
+#     await ctx.send("Error: " + str(error))
 
 
 bot.run(token)
